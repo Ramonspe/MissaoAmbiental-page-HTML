@@ -1,0 +1,559 @@
+
+
+/* Gerais */
+body{
+    font-family: 'Roboto', 'Nunito', sans-serif;
+    background-color: #F9F9F9;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    margin: 0;
+}
+
+.container {
+    padding: 30px 0;
+}
+
+p, li {
+    color: #000000;
+    font-size: 14px;
+}
+
+/* Barra de navegação */
+header, .navbar {
+    background-color: #FBE83280;
+}
+
+.custom-text-color {
+  color: #000; /* Cor preta (pode ser ajustada conforme necessário) */
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #316131;
+}
+
+
+.navbar-brand:hover {
+    color: #316131;
+}
+
+#a-unico{
+  padding-top: 100;
+}
+
+
+#navbar-links a {
+    color: #000000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+#façaparte-btn{
+    background-color: #7FC241;
+    color: #000000;
+    font-family: 'Roboto';
+    width: 200px;
+    text-align: center;
+    
+}
+
+#façaparte-btn2{
+  background-color: #7FC241;
+  color: #000000;
+  font-family: 'Roboto';
+  width: 200px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom:20px;
+}
+
+
+/* Portfólio */
+
+.main-title {
+    font-size: 30px;
+  }
+
+  .main-title {
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+  }
+
+.main-btn {
+    background-color: #65DAF9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+  }
+
+  .main-btn:hover {
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #3EC1D5;
+  }
+
+.project-box {
+    margin-bottom: 30px;
+  }
+
+
+  #portfolio-area .filter-btn {
+    margin-bottom: 20px;
+  }
+  
+  #filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+ 
+  #portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  
+  #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #FFF;
+    border: 1px solid #65DAF9;
+    background-color: #65DAF9;
+  } 
+ 
+  
+
+  /* Sobre a ONG */
+
+  #about-area {
+    background-color: #FFF;
+  }
+  
+  .main-title {
+    color: #000000;
+    margin: 10px 0px 30px 65px;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+ .main-title::after {
+  content: "";
+  border-top: 2px solid #333;
+  width: 15%;
+  position: absolute;
+  top: -5px;
+  left: 42.5%;
+}
+  
+  .about-title {
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #about-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #about-list li {
+    line-height: 30px;
+  }
+  
+  #about-list i {
+    color: #65DAF9;
+    margin-right: 15px;
+  } 
+  
+
+  
+  /* Dados */
+  
+  .circle-box div {
+    padding: 0 40px;
+  }
+  
+  .progressbar-text {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  
+  #data-area p {
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  
+  /* Feedback */
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  
+  
+  /* Portfólio */
+  
+  .project-box {
+    margin-bottom: 30px;
+  }
+  
+  #filter-btn-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  #portfolio-area .filter-btn {
+    color: #444;
+    border: 1px solid #444;
+    background-color: transparent;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+  }
+  
+  #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover {
+    color: #FFF;
+    border: 1px solid #65DAF9;
+    background-color: #65DAF9;
+  }
+  
+
+
+  
+  /* Footer */
+  
+  #contact-area {
+    text-align: center;
+  }
+  
+  .contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #3EC1D5;
+  }
+  
+  .contact-box i {
+    color: #444;
+    border: solid 1px #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-box p {
+    font-size: 16px;
+  }
+  
+  .contact-tile {
+    font-weight: bold;
+    color: #3EC1D5;
+  }
+  
+  #msg-box p {
+    font-size: 22px;
+  }
+  
+  #contact-form input[type="text"], #contact-form textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+  }
+  
+  #contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+  }
+  
+  #contact-form .main-btn:hover {
+    color: #3EC1D5;
+  }
+  
+  /* Copy */
+  
+  #copy-area {
+    background-color: #F1F1F1;
+  }
+  
+  #copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  #copy-area .container p {
+    margin-bottom: 0;
+  }
+  
+  #copy-area .container a {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  #copy-area .container a:hover {
+    text-decoration: none;
+    color: #3EC1D5;
+  }
+  
+  /* responsive */
+  @media(max-width: 768px) {
+    
+    /* geral */
+    .container {
+      padding: 20px 0;
+    }
+
+    /* hero */
+    #hero {
+      height: auto;
+    } 
+    
+    /* about */
+    #about-area img {
+      margin-top: 100px;
+    }
+    
+    /* data */
+    .circle-box div {
+      padding: 0 10px;
+    }
+  
+    #data-area p {
+      font-size: 16px;
+    }
+    
+    /* feedback */
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .card-text {
+      font-size: 12px;
+    }
+  
+    /* apply */
+    #apply-area .apply-box {
+      padding: 50px 25px;
+    }
+  
+    /* news */
+    #news-area p {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #email-input {
+      width: 70%;
+    }
+  
+    #call-area {
+      margin-top: 30px;
+    }
+  
+    #call-area .container {
+      padding: 30px;
+    }
+  
+    #call-area p, #call-area #call-btn {
+      font-size: 16px;
+    }
+  
+  }
+  
+  
+  @media(max-width: 425px) {
+   
+    /* about */
+    .main-title {
+      font-size: 30px;
+    }
+  
+    #about-area img {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  
+    /* data */
+    .circle-box {
+      width: 50%;
+    }
+  
+    #team-area .col-md-3 {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  
+    /* apply */
+    #apply-area {
+      height: auto;
+    }
+  
+    #company-img {
+      display: none;
+    }
+  
+    /* contact */
+    .contact-box {
+      border: none;
+      margin-bottom: 0;
+    }
+  
+  }
+
+  .mapBox{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background: #fff;
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* Rodapé */
+
+footer {
+  margin-top: auto;
+
+}
+
+footer .inline {
+  display: inline-block;
+}
+
+footer .logo_text {
+  font-family: 'Mina', sans-serif;
+  font-size: 200%;
+  color: rgba(49, 97, 47, 0.8);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  bottom: 5.8%;
+}
+
+footer .logos_parceiros {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 9px;
+  bottom: 11.8%;
+}
+
+footer section {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(80, 85, 92, 1);
+  font-size: 85%
+}
+
+footer button.clickable_text {
+  background: none;
+  border: none;
+}
+
+footer .modal_button {
+  right: 50%;
+
+}
+
+footer .vertical_a {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 5px;
+}
+
+footer .logos_parceiros:hover {
+  border: solid  rgba(49, 97, 47, 0.8) 3px;
+}
+
+footer button.clickable_text:hover {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  footer .vanish_sm {
+      display: none;
+  }
+
+  footer .logos_parceiros {
+      max-width: 85%;
+  }
+
+  footer .logo {
+      max-width: 250%;
+  }
+
+  footer section {
+      font-size: 55%
+  }
+}
+
+
+footer .jw-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, .75);
+  padding: 10%;
+  overflow: auto;
+}
+
+footer .jw-modal.open {
+  display: block;
+}
+
+footer .jw-modal-body {
+  padding: 20px;
+  background: #fff;
+}
+
+body.jw-modal-open {
+  overflow: hidden;
+}
