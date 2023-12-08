@@ -210,6 +210,53 @@ async function initMap() {
 
 initMap();
 
+// Projetos
+// Indicator
+function getClosestSection() {
+    const scrollTop = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    let closestSection = null;
+    let closestDistance = Number.MAX_VALUE;
+
+    $('.section-projetos').each(function() {
+        const section = $(this);
+        const sectionTop = section.offset().top;
+        const sectionHeight = section.outerHeight();
+        const distance = Math.abs((scrollTop + windowHeight / 2) - (sectionTop + sectionHeight / 2));
+
+        if (distance < closestDistance) {
+            closestDistance = distance;
+            closestSection = section;
+        }
+    });
+
+    return closestSection;
+}
+
+$(document).scroll(() => {
+    if ($(window).width() >= 768) {
+        const closestSection = getClosestSection();
+        const indicatorCircle = $('.indicator-circle');
+
+        indicatorCircle.toggleClass('visible', closestSection !== null);
+
+        if (closestSection) {
+            indicatorCircle.appendTo(closestSection);
+        }
+    }
+});
+
+// JumpLink
+$(document).ready(function() {
+    $('.dropdown-item').on('click', function(event) {
+        event.preventDefault();
+        let targetSection = $($(this).attr('href'));
+        $('html, body').animate({
+            scrollTop: targetSection.offset().top - ($(window).height() - targetSection.outerHeight()) / 2
+        }, 500);
+    });
+});
+
 //Rodapé
 
 function openModal(id) {
