@@ -4,11 +4,6 @@
 body{
     font-family: 'Roboto', 'Nunito', sans-serif;
     background-color: #F9F9F9;
-
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .row{
@@ -42,9 +37,9 @@ header, .navbar {
     width: 75px;
 }
 
-.navbar-brand {
+.navbar-brand { 
     padding: 0;
-    color: #316131;
+    color: #316131 !important; 
 }
 
 
@@ -459,6 +454,13 @@ header, .navbar {
 }
 
 /* Rodapé */
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 footer {
   margin-top: auto;

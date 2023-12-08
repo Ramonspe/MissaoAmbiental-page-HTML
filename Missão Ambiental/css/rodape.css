@@ -1,0 +1,105 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer {
+    margin-top: auto;
+
+}
+
+footer .inline {
+    display: inline-block;
+}
+
+footer .logo_text {
+    font-family: 'Mina', sans-serif;
+    font-size: 200%;
+    color: rgba(49, 97, 47, 0.8);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    bottom: 5.8%;
+}
+
+footer .logos_parceiros {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 9px;
+    bottom: 11.8%;
+}
+
+footer section {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(80, 85, 92, 1);
+    font-size: 85%
+}
+
+footer button.clickable_text {
+    background: none;
+    border: none;
+}
+
+footer .modal_button {
+    right: 50%;
+
+}
+
+footer .vertical_a {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    column-gap: 5px;
+}
+
+footer .logos_parceiros:hover {
+    border: solid rgba(49, 97, 47, 0.8) 3px;
+}
+
+footer button.clickable_text:hover {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+    footer .vanish_sm {
+        display: none;
+    }
+
+    footer .logos_parceiros {
+        max-width: 85%;
+    }
+
+    footer .logo {
+        max-width: 250%;
+    }
+
+    footer section {
+        font-size: 55%
+    }
+}
+
+
+footer .jw-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 10%;
+    overflow: auto;
+}
+
+footer .jw-modal.open {
+    display: block;
+}
+
+footer .jw-modal-body {
+    padding: 20px;
+    background: #fff;
+}
+
+body.jw-modal-open {
+    overflow: hidden;
+}
